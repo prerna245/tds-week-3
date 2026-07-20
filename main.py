@@ -5,6 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 import httpx
 import config
+import base64
 app = FastAPI()
 # CORS wide open — grader calls from a Cloudflare Worker
 app.add_middleware(
